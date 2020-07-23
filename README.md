@@ -58,6 +58,10 @@ function Card({ img, name, description, repo, link }) {
 }
 ```
 
+## Challenges
+
+Once deployed, the application was functional but the routing was not considering the full URL, meaning, clicking on navigation links would route to the "root"-level application of my previous portfolio. I found (this)[https://github.com/facebook/create-react-app/issues/1765] GitHub issue helpful.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

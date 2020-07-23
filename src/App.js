@@ -16,9 +16,17 @@ function App() {
       <div className="hero is-fullheight is-default is-bold">
         <Nav />
         <Switch>
-          <Route exact path="%PUBLIC_URL%/" component={About} />
-          <Route exact path="%PUBLIC_URL%/portfolio" component={Portfolio} />
-          <Route exact path="%PUBLIC_URL%/resume" component={Resume} />
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={About} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/portfolio"}
+            component={Portfolio}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/resume"}
+            component={Resume}
+          />
         </Switch>
         <Footer />
       </div>
