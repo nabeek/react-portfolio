@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "",
+    "name": "Earthquake Now",
+    "description": "An easy-to-use tool for searching earthquake activity by user-input area",
+    "repo": "https://github.com/nabeek/Earthquake-Now",
+    "link": "https://nabeek.github.io/Earthquake-Now/"
+  },
+  {
+    "id": 2,
+    "img": "",
+    "name": "Cookbook",
+    "description": "A community-driven recipe database, built with Express, Sequelize, and Passport JS",
+    "repo": "https://github.com/nabeek/cookbook",
+    "link": "https://the-cookbook-app.herokuapp.com/"
+  },
+  {
+    "id": 3,
+    "img": "",
+    "name": "Team Generator",
+    "description": "A Node CLI for generating a team summary in HTML",
+    "repo": "https://github.com/nabeek/employee-summary",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "img": "",
+    "name": "Note Taker",
+    "description": "A Note Taker application built with Express",
+    "repo": "https://github.com/nabeek/note-taker",
+    "link": "https://nabeek-note-taker.herokuapp.com/"
+  },
+  {
+    "id": 5,
+    "img": "",
+    "name": "Eat-Da-Burger",
+    "description": "A burger logger built with MySQL, Node, Express, and Handlebars",
+    "repo": "https://github.com/nabeek/eat-da-burger",
+    "link": "https://nabeek-eat-da-burger.herokuapp.com/"
+  },
+  {
+    "id": 6,
+    "img": "",
+    "name": "Did Jonas Win With VS?",
+    "description": "A quick way to find out if Jonas won his last DotA match while playing VS",
+    "repo": "https://github.com/nabeek/did-jonas-win-with-vs",
+    "link": "https://nabeek.github.io/did-jonas-win-with-vs/"
+  }
+]
