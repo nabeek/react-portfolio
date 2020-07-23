@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Portfolio
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+This refactored website takes an existing portfolio and rebuilds it using React.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+My React portfolio is live [here](https://nabeek.github.io/react-portfolio/).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Screenshot
 
-### `npm test`
+![react-portfolio](https://user-images.githubusercontent.com/4752937/88250673-826a7700-cc65-11ea-98e8-d52b9dd48c46.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Used
 
-### `npm run build`
+[Bulma](https://bulma.io/)\
+[React](https://reactjs.org/)\
+[React Icons](https://react-icons.github.io/react-icons/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Example Code
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Although I'm not too terribly happy with the card styling in Bulma (I should probably rewrite all of this in Bootstrap), the code below shows how each card was populated from a JSON object containing the list of projects for the portfolio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+function Card({ img, name, description, repo, link }) {
+  return (
+    <div className="card is-3">
+      <div className="card-image">
+        <figure className="image is-4by3">
+          <img src={img} alt="Placeholder image" />
+        </figure>
+      </div>
+      <div className="card-content">
+        <div className="media">
+          <div className="media-content">
+            <p className="title is-4">{name}</p>
+            <div className="content">{description}</div>
+            <div className="has-text-centered">
+              <button
+                className="button is-link"
+                onClick={() => window.open(repo, "_blank")}
+              >
+                <FaGithub />
+              </button>
+              <button
+                className="button is-link"
+                onClick={() => window.open(link, "_blank")}
+              >
+                <FaLink />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+```
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT © [nabeek](https://github.com/nabeek)
