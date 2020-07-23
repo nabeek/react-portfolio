@@ -3,13 +3,13 @@ import React from "react";
 import Card from "../components/Card";
 import PortfolioItems from "../utils/portfolioItems.json";
 
-import {} from "react-icons/fa";
+import "./Portfolio.css";
 
 function About() {
   return (
     <div className="hero-body">
       <div className="container">
-        <div className="columns is-vcentered">
+        <div className="columns card-deck">
           {PortfolioItems.map(app => (
             <Card
               key={app.id}
