@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, HashRouter } from "react-router-dom";
 
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -15,11 +15,11 @@ function App() {
     <Router>
       <div className="hero is-fullheight is-default is-bold">
         <Nav />
-        <Switch>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Route exact path="/" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/resume" component={Resume} />
-        </Switch>
+        </HashRouter>
         <Footer />
       </div>
     </Router>
