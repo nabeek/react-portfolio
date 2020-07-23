@@ -18,10 +18,10 @@
   {
     "id": 3,
     "img": "",
-    "name": "Team Generator",
-    "description": "A Node CLI for generating a team summary in HTML",
-    "repo": "https://github.com/nabeek/employee-summary",
-    "link": ""
+    "name": "Fitness Tracker",
+    "description": "A simple exercise and workout tracker build with MongoDB, Express, and Node",
+    "repo": "https://github.com/nabeek/fitness-tracker",
+    "link": "https://nabeek-fitness-tracker.herokuapp.com/"
   },
   {
     "id": 4,
