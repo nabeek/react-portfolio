@@ -1,0 +1,45 @@
+#resume-name,
+.job-entry {
+  margin-bottom: 2em;
+}
+
+.resume-job {
+  font-size: 1.5rem;
+}
+
+#resume-section,
+.resume-position,
+.job-entry li {
+  font-size: 1.25rem;
+}
+
+.resume-date {
+  display: block;
+  text-align: right;
+}
+
+.resume-button {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #resume-name {
+    font-size: 1.5rem;
+  }
+  .resume-job {
+    font-size: 1rem;
+  }
+  #resume-section,
+  .resume-position,
+  .job-entry li {
+    font-size: 0.75rem;
+  }
+  .resume-button {
+    border-radius: 2px;
+    font-size: 0.75rem;
+  }
+}
+
+#uubc {
+  margin-bottom: 0.5em;
+}

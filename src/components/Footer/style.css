@@ -1,0 +1,10 @@
+#footer {
+  margin: 3rem 0rem;
+}
+
+#nabeek-link:hover,
+#match-id:hover,
+#repo-link:hover {
+  cursor: pointer;
+  color: #3273dc;
+}
