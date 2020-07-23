@@ -8,7 +8,7 @@ function Card({ img, name, description, repo, link }) {
     <div className="card is-3">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src={img} alt="Placeholder image" />
+          <img src={img} alt="Application screenshot" />
         </figure>
       </div>
       <div className="card-content">

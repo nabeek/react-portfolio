@@ -8,7 +8,7 @@ function Nav() {
       <nav className="navbar">
         <div className="container">
           <div className="navbar-brand">
-            <Link className="navbar-item" to={"/"}>
+            <Link className="navbar-item" to={process.env.PUBLIC_URL + "/"}>
               <p className="has-text-weight-bold is-size-4">nabeek</p>
             </Link>
             <span className="navbar-burger burger" data-target="navbarMenu">
@@ -22,13 +22,15 @@ function Nav() {
               <div className="tabs is-right">
                 <ul>
                   <li>
-                    <Link to={"/"}>Home</Link>
+                    <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
                   </li>
                   <li>
-                    <Link to={"/portfolio"}>Portfolio</Link>
+                    <Link to={process.env.PUBLIC_URL + "/portfolio"}>
+                      Portfolio
+                    </Link>
                   </li>
                   <li>
-                    <Link to={"/resume"}>Resume</Link>
+                    <Link to={process.env.PUBLIC_URL + "/resume"}>Resume</Link>
                   </li>
                 </ul>
               </div>
