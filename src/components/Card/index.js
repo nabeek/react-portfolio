@@ -7,7 +7,7 @@ function Card({ img, name, description, repo, link }) {
   return (
     <div className="card is-3">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image">
           <img src={img} alt="Application screenshot" />
         </figure>
       </div>
