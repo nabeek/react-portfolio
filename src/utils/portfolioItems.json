@@ -46,5 +46,13 @@
     "description": "A quick way to find out if Jonas won his last DotA match while playing VS",
     "repo": "https://github.com/nabeek/did-jonas-win-with-vs",
     "link": "https://nabeek.github.io/did-jonas-win-with-vs/"
+  },
+  {
+    "id": 7,
+    "img": "./assets/google-books.gif",
+    "name": "(React) Google Books Search",
+    "description": "Search the Google Books API and save interesting titles to view later",
+    "repo": "https://github.com/nabeek/google-books",
+    "link": "https://nabeek-google-books.herokuapp.com/"
   }
 ]
